@@ -4,6 +4,7 @@
 
 * Log ind med brugernavn og adgangskode.
 * Øverst i højre hjørne er en knap kaldet `Create`, klik på denne og vælg `Droplets`. Derefter vises opsætningen for vores nye server.
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png
 * For `Choose an image` vælg `CentOS` og ændr versionen til `6.9 x32`.
 * For `Choose a size` vælg den mindste version til $5 om måneden da vi ikke behøver en hurtig server.
 * For `Choose a datacenter region` vælg gerne en server der er dækket af lovgivningen som vi kender og/eller en server som ligger tæt på. Eksempelvis Amsterdam, eller Frankfurt.
