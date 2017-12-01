@@ -17,3 +17,7 @@
 
 ## 2. Opret forbindelse til serveren via SSH på Mac
 
+* Tjek om du har modtaget e-mailen, det eneste vi skal bruge er `Droplet Name`, `IP Adress`, `Username` og `Password`.
+![Step 1](https://github.com/wi73c-praktisk-web/webserver-tobias-brage/blob/master/images/2step1.jpg?raw=true)
+* Forbindelsen oprettes ved at indtaste `SSH root@xxx.xxx.xxx.xxx`, root er `username` og efterfulgt af `@` indtastes IP-adressen fra e-mailen.
+![Step 2](https://github.com/wi73c-praktisk-web/webserver-tobias-brage/blob/master/images/2step2.jpg?raw=true)
