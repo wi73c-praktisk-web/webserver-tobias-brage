@@ -223,6 +223,8 @@ For at tilslutte til MySQL serveren udenfor `localhost` kan eksempelvis MySQLWor
 * `Password` er kodeordet der er blevet oprettet oven over.
 Det burde nu være muligt at forbinde til MySQL serveren.
 
+## Referencer
+
 * [Link til Brian Emilius YouTube video om Linux Server del 1.](https://www.youtube.com/watch?v=qfkeOPjGKxQ "Link til Brian Emilius YouTube video om Linux Server del 1.")
 * [Link til Brian Emilius YouTube video om Linux Server del 2.](https://www.youtube.com/watch?v=ZuzJX5V2ktY "Link til Brian Emilius YouTube video om Linux Server del 2.")
 * [Link til Brian Emilius YouTube video om MySQL adgang.](https://www.youtube.com/watch?v=7ouzVS1OP00 "Link til Brian Emilius YouTube video om MySQL adgang.")
