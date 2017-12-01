@@ -18,10 +18,10 @@
 ## 2. Opret forbindelse til serveren via SSH på Mac
 
 * Tjek om du har modtaget e-mailen, det eneste vi skal bruge er `Droplet Name`, `IP Adress`, `Username` og `Password`.
-![Step 1](https://github.com/wi73c-praktisk-web/webserver-tobias-brage/blob/master/images/2step1.jpg?raw=true)
+[Step 1](https://github.com/wi73c-praktisk-web/webserver-tobias-brage/blob/master/images/2step1.jpg?raw=true)
 * Forbindelsen oprettes ved at indtaste `SSH root@xxx.xxx.xxx.xxx`, root er `username` og efterfulgt af `@` er IP adressen fra e-mailen. Når du logger ind første gang kender computeren ikke serveren og den spørger derfor om du vil fortsætte, indtast `yes`.
-![Step 2](https://github.com/wi73c-praktisk-web/webserver-tobias-brage/blob/master/images/2step2.jpg?raw=true)
+[Step 2](https://github.com/wi73c-praktisk-web/webserver-tobias-brage/blob/master/images/2step2.jpg?raw=true)
 * Udover RSA Key vil den også ved første log ind kræve at du ændrer adgangskoden, først vil den bede dig indtaste den gamle og derefter den nye to gange.
-![Step 3](https://github.com/wi73c-praktisk-web/webserver-tobias-brage/blob/master/images/2step3.jpg?raw=true)
+[Step 3](https://github.com/wi73c-praktisk-web/webserver-tobias-brage/blob/master/images/2step3.jpg?raw=true)
 * Du burde nu have adgang til serveren og kan nu navigere rundt via kommandoer i terminalen.
-![Step 4](https://github.com/wi73c-praktisk-web/webserver-tobias-brage/blob/master/images/2step4.jpg?raw=true)
+[Step 4](https://github.com/wi73c-praktisk-web/webserver-tobias-brage/blob/master/images/2step4.jpg?raw=true)
