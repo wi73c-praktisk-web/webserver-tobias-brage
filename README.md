@@ -1,7 +1,19 @@
 # Opsætning af Linux webserver
 
-[link text](#abcd)
+[1. Oprettelse af webserver på DigitalOcean](#step1)
+[2. Opret forbindelse til serveren via SSH på Mac](#step2)
+[3. Installer nano texteditor](#step3)
+[4. Installer MySQL](#step4)
+[5. Installer Node.js](#step5)
+[6. Installer PM2](#step6)
+[7. Installer Git](#step7)
+[8. Opret et nøglesæt til GitHub](#step8)
+[9. Opret en mappe til applikationen](#step9)
+[10. Klon et GitHub repository](#step10)
+[11. Tilladelser og tilslutning til MySQL](#step11)
+[Referencer](#referencer)
 
+<a name="step1"></a>
 ## 1. Oprettelse af webserver på DigitalOcean
 
 * Log ind med brugernavn og adgangskode.
@@ -12,6 +24,7 @@
 * Det sidste vi behøver at gøre er nu at give serveren et navn, dette gøres under `Choose a hostname` og klik dernæst på `Create`.
 * Serveren er nu oppe at køre og du modtager en mail med de oplysninger du har brug for.
 
+<a name="step2"></a>
 ## 2. Opret forbindelse til serveren via SSH på Mac
 
 * Tjek om du har modtaget e-mailen, det eneste vi skal bruge er `Droplet Name`, `IP Adress`, `Username` og `Password`.
@@ -23,6 +36,7 @@ root er `username` og efterfulgt af `@` er IP adressen fra e-mailen. Når du log
 * Udover RSA Key vil den også ved første log ind kræve at du ændrer adgangskoden, først vil den bede dig indtaste den gamle og derefter den nye to gange.
 * Du burde nu have adgang til serveren og kan nu navigere rundt via kommandoer i terminalen.
 
+<a name="step3"></a>
 ## 3. Installer nano texteditor
 
 * For at installere `nano` indtastes følgende kommando i terminalen.
@@ -31,6 +45,7 @@ yum install nano
 ```
 Den vil spørge om alting er `Ok`, indtast `j` for at fuldføre installationen.
 
+<a name="step4"></a>
 ## 4. Installer MySQL
 
 * For at installere `MySQL` indtastes følgende kommando i terminalen.
@@ -62,6 +77,7 @@ MySQL er nu konfigureret, den skal blot genstartes med kommandoen.
 service mysqld restart
 ```
 
+<a name="step5"></a>
 ## 5. Installer Node.js
 
 * For at installere Node.js skal vi først tilføje et nødvendigt repository, det gøres med følgende kommando.
@@ -109,6 +125,7 @@ For at bekræfte opdateringen kan følgende kommandoe benyttes igen.
 node -v
 ```
 
+<a name="step6"></a>
 ## 6. Installer PM2
 
 * For installere `PM2` bruger vi følgende kommando.
@@ -124,6 +141,7 @@ pm2 startup
 pm2 status
 ```
 
+<a name="step7"></a>
 ## 7. Installer Git
 
 * For at installere `Git` bruges følgende kommando.
@@ -144,6 +162,7 @@ Hvis du vil se konfigurationen brug kommandoen.
 nano ~/.gitconfig
 ```
 
+<a name="step8"></a>
 ## 8. Opret et nøglesæt til GitHub
 
 * For at oprette et `nøglesæt` som du kan bruge til at forbinde med `GitHub` bruges følgende kommando.
@@ -168,6 +187,7 @@ Kopier hele indholdet af filen med musen, lav eventuelt nogle nye linjer for at 
    * Indsæt nøglen som du kopierede tidligere fra terminalen og indsæt den i `Key` tekstboksen.
    * Klik nu på `Add SSH Key` og indtast dit GitHub kodeord.
 
+<a name="step9"></a>
 ## 9. Opret en mappe til applikationen
 
 * Først opretter vi mappen med følgende kommando, i dette tilfælde kalder vi den for `www`.
@@ -179,6 +199,7 @@ mkdir ~/www
 cd ~/www
 ```
 
+<a name="step10"></a>
 ## 10. Klon et GitHub repository
 
 * For at klone et `repository` fra Github til vores nuværende lokation bruger vi følgende kommando.
@@ -197,6 +218,7 @@ git pull git@github.com:brugernavn/repository
    * Efterfulgt af `@github.com:` indtaster du dit `GitHub` brugernavn.
    * Derefter indtastes navnet på det `repository` du gerne vil klone. Kig evt. i URL'en når du besøger dit `repository` for at se det korrekte navn.
 
+<a name="step11"></a>
 ## 11. Tilladelser og tilslutning til MySQL
 
 * Før vi kan tilgå MySQL på vores server fra en anden maskine skal vi først have ændret på tilladleserne.
@@ -225,8 +247,7 @@ For at tilslutte til MySQL serveren udenfor `localhost` kan eksempelvis MySQLWor
 * `Password` er kodeordet der er blevet oprettet oven over.
 Det burde nu være muligt at forbinde til MySQL serveren.
 
-<a name="abcd"></a>
-
+<a name="referencer"></a>
 ## Referencer
 
 * [Link til Brian Emilius YouTube video om Linux Server del 1.](https://www.youtube.com/watch?v=qfkeOPjGKxQ "Link til Brian Emilius YouTube video om Linux Server del 1.")
