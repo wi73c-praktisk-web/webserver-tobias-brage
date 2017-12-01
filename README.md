@@ -1,5 +1,7 @@
 # Opsætning af Linux webserver
 
+[link text](#abcd)
+
 ## 1. Oprettelse af webserver på DigitalOcean
 
 * Log ind med brugernavn og adgangskode.
@@ -21,7 +23,7 @@ root er `username` og efterfulgt af `@` er IP adressen fra e-mailen. Når du log
 * Udover RSA Key vil den også ved første log ind kræve at du ændrer adgangskoden, først vil den bede dig indtaste den gamle og derefter den nye to gange.
 * Du burde nu have adgang til serveren og kan nu navigere rundt via kommandoer i terminalen.
 
-## Installer nano texteditor
+## 3. Installer nano texteditor
 
 * For at installere `nano` indtastes følgende kommando i terminalen.
 ```
@@ -29,7 +31,7 @@ yum install nano
 ```
 Den vil spørge om alting er `Ok`, indtast `j` for at fuldføre installationen.
 
-## Installer MySQL
+## 4. Installer MySQL
 
 * For at installere `MySQL` indtastes følgende kommando i terminalen.
 ```
@@ -60,7 +62,7 @@ MySQL er nu konfigureret, den skal blot genstartes med kommandoen.
 service mysqld restart
 ```
 
-## Installer Node.js
+## 5. Installer Node.js
 
 * For at installere Node.js skal vi først tilføje et nødvendigt repository, det gøres med følgende kommando.
 ```
@@ -107,7 +109,7 @@ For at bekræfte opdateringen kan følgende kommandoe benyttes igen.
 node -v
 ```
 
-## Installer PM2
+## 6. Installer PM2
 
 * For installere `PM2` bruger vi følgende kommando.
 ```
@@ -122,7 +124,7 @@ pm2 startup
 pm2 status
 ```
 
-## Installer Git
+## 7. Installer Git
 
 * For at installere `Git` bruges følgende kommando.
 ```
@@ -142,7 +144,7 @@ Hvis du vil se konfigurationen brug kommandoen.
 nano ~/.gitconfig
 ```
 
-## Opret et nøglesæt til GitHub
+## 8. Opret et nøglesæt til GitHub
 
 * For at oprette et `nøglesæt` som du kan bruge til at forbinde med `GitHub` bruges følgende kommando.
 ```
@@ -166,7 +168,7 @@ Kopier hele indholdet af filen med musen, lav eventuelt nogle nye linjer for at 
    * Indsæt nøglen som du kopierede tidligere fra terminalen og indsæt den i `Key` tekstboksen.
    * Klik nu på `Add SSH Key` og indtast dit GitHub kodeord.
 
-## Opret en mappe til applikationen
+## 9. Opret en mappe til applikationen
 
 * Først opretter vi mappen med følgende kommando, i dette tilfælde kalder vi den for `www`.
 ```
@@ -177,7 +179,7 @@ mkdir ~/www
 cd ~/www
 ```
 
-## Klon et GitHub repository
+## 10. Klon et GitHub repository
 
 * For at klone et `repository` fra Github til vores nuværende lokation bruger vi følgende kommando.
 ```
@@ -195,7 +197,7 @@ git pull git@github.com:brugernavn/repository
    * Efterfulgt af `@github.com:` indtaster du dit `GitHub` brugernavn.
    * Derefter indtastes navnet på det `repository` du gerne vil klone. Kig evt. i URL'en når du besøger dit `repository` for at se det korrekte navn.
 
-## Tilladelser og tilslutning til MySQL
+## 11. Tilladelser og tilslutning til MySQL
 
 * Før vi kan tilgå MySQL på vores server fra en anden maskine skal vi først have ændret på tilladleserne.
 * Før vi kan konfiguere på MySQL skal vi først sørge for at vi er tilkoblet serveren og at MySQL er startet.
@@ -222,6 +224,8 @@ For at tilslutte til MySQL serveren udenfor `localhost` kan eksempelvis MySQLWor
 * `Port` er 3306 medmindre den er blevet ændret manuelt.
 * `Password` er kodeordet der er blevet oprettet oven over.
 Det burde nu være muligt at forbinde til MySQL serveren.
+
+<a name="abcd"></a>
 
 ## Referencer
 
