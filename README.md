@@ -1,17 +1,17 @@
 # Opsætning af Linux webserver
 
-[1. Oprettelse af webserver på DigitalOcean](#step1)
-[2. Opret forbindelse til serveren via SSH på Mac](#step2)
-[3. Installer nano texteditor](#step3)
-[4. Installer MySQL](#step4)
-[5. Installer Node.js](#step5)
-[6. Installer PM2](#step6)
-[7. Installer Git](#step7)
-[8. Opret et nøglesæt til GitHub](#step8)
-[9. Opret en mappe til applikationen](#step9)
-[10. Klon et GitHub repository](#step10)
-[11. Tilladelser og tilslutning til MySQL](#step11)
-[Referencer](#referencer)
+* [1. Oprettelse af webserver på DigitalOcean](#step1)
+* [2. Opret forbindelse til serveren via SSH på Mac](#step2)
+* [3. Installer nano texteditor](#step3)
+* [4. Installer MySQL](#step4)
+* [5. Installer Node.js](#step5)
+* [6. Installer PM2](#step6)
+* [7. Installer Git](#step7)
+* [8. Opret et nøglesæt til GitHub](#step8)
+* [9. Opret en mappe til applikationen](#step9)
+* [10. Klon et GitHub repository](#step10)
+* [11. Tilladelser og tilslutning til MySQL](#step11)
+* [Referencer](#referencer)
 
 <a name="step1"></a>
 ## 1. Oprettelse af webserver på DigitalOcean
