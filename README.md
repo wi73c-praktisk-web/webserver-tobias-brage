@@ -195,6 +195,36 @@ git pull git@github.com:brugernavn/repository
    * Efterfulgt af `@github.com:` indtaster du dit `GitHub` brugernavn.
    * Derefter indtastes navnet på det `repository` du gerne vil klone. Kig evt. i URL'en når du besøger dit `repository` for at se det korrekte navn.
 
-[Link til Brian Emilius YouTube video om emnet.](https://www.youtube.com/watch?v=ZuzJX5V2ktY "Link til Brian Emilius YouTube video om emnet.")
+## Tilladelser og tilslutning til MySQL
+
+* Før vi kan tilgå MySQL på vores server fra en anden maskine skal vi først have ændret på tilladleserne.
+* Før vi kan konfiguere på MySQL skal vi først sørge for at vi er tilkoblet serveren og at MySQL er startet.
+* I terminalen bruges følgende kommando for at tilkoble MySQL.
+```
+mysql - p
+```
+Efterfulgt af adgangskoden til MySQL.
+* For at tillade `root` brugeren fuld adgang til alle databaser, tabeller og kommandoer bruges følgende kommando.
+```
+GRANT ALL ON *.* to 'root'@'%';
+```
+* Derefter skal vi indstille et kodeord til forbindelsen for `root` brugeren når der tilkobles udenfor `localhost`, der bruges følgende kommando.
+```
+SET PASSWORD FOR 'root'@'%' = PASSWORD('adgangskode');
+```
+Imellem parenteserne indtastes kodeordet.
+* For at afslutte MySQL forbindelsen indtastes følgende kommando.
+```
+quit;
+```
+For at tilslutte til MySQL serveren udenfor `localhost` kan eksempelvis MySQLWorkbench eller Sequel Pro andvendes.
+* `Host` er IP adressen oplyst i e-mailen og den samme der benyttes til kommunikation med serveren.
+* `Port` er 3306 medmindre den er blevet ændret manuelt.
+* `Password` er kodeordet der er blevet oprettet oven over.
+Det burde nu være muligt at forbinde til MySQL serveren.
+
+* [Link til Brian Emilius YouTube video om Linux Server del 1.](https://www.youtube.com/watch?v=qfkeOPjGKxQ "Link til Brian Emilius YouTube video om Linux Server del 1.")
+* [Link til Brian Emilius YouTube video om Linux Server del 2.](https://www.youtube.com/watch?v=ZuzJX5V2ktY "Link til Brian Emilius YouTube video om Linux Server del 2.")
+* [Link til Brian Emilius YouTube video om MySQL adgang.](https://www.youtube.com/watch?v=7ouzVS1OP00 "Link til Brian Emilius YouTube video om MySQL adgang.")
 
 
