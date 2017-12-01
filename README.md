@@ -221,7 +221,7 @@ git pull git@github.com:brugernavn/repository
 <a name="step11"></a>
 ## 11. Tilladelser og tilslutning til MySQL
 
-* Før vi kan tilgå MySQL på vores server fra en anden maskine skal vi først have ændret på tilladleserne.
+* Før vi kan tilgå MySQL på vores server fra en anden maskine skal vi først have ændret på tilladelserne.
 * Før vi kan konfiguere på MySQL skal vi først sørge for at vi er tilkoblet serveren og at MySQL er startet.
 * I terminalen bruges følgende kommando for at tilkoble MySQL.
 ```
