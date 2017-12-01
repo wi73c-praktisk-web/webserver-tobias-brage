@@ -195,3 +195,5 @@ git pull git@github.com:brugernavn/repository
    * Efterfulgt af `@github.com:` indtaster du dit `GitHub` brugernavn.
    * Derefter indtastes navnet på det `repository` du gerne vil klone. Kig evt. i URL'en når du besøger dit `repository` for at se det korrekte navn.
 
+[YouTube](https://www.youtube.com/watch?v=ZuzJX5V2ktY "Link til Brian Emilius YouTube video om emnet.")
+
