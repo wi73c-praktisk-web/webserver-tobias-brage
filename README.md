@@ -214,7 +214,7 @@ git clone git@github.com:brugernavn/repository
 
 * For at opdatere filerne efter ændring af `repository` bruges følgende kommando.
 ```
-git pull git@github.com:brugernavn/repository
+git pull
 ```
    * Efterfulgt af `@github.com:` indtaster du dit `GitHub` brugernavn.
    * Derefter indtastes navnet på det `repository` du gerne vil klone. Kig evt. i URL'en når du besøger dit `repository` for at se det korrekte navn.
@@ -263,6 +263,12 @@ pm2 status
 ```
 Her kan du se om serveren har crashet osv.
 For at besøge `api'et` i `browseren` skal du blot indtaste `IP adressen` fra emailen og `porten` som du har givet i filen du startede (server.js eller app.js).
+
+For at genstarte serveren brug følgende kommando.
+```
+pm2 restart filnavn
+```
+Filnavn er navnet på filen der skal startes, oftest `server.js` eller `app.js`.
 
 <a name="referencer"></a>
 ## Referencer
