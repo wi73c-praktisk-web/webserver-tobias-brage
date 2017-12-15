@@ -247,6 +247,22 @@ For at tilslutte til MySQL serveren udenfor `localhost` kan eksempelvis MySQLWor
 * `Password` er kodeordet der er blevet oprettet oven over.
 Det burde nu være muligt at forbinde til MySQL serveren.
 
+<a name="startapi"></a>
+## Starte API'et
+
+For at starte `api'et` med `pm2` skal du først navigere ind i projekt mappen som du har klonet ned fra GitHub.
+Når du er i mappen skriv følgende kommando.
+```
+pm2 start filnavn
+```
+Filnavn er navnet på filen der skal startes, oftest `server.js` eller `app.js`.
+Du kan overvåge serveren med følgende kommando.
+```
+pm2 status
+```
+Her kan du se om serveren har crashet osv.
+For at besøge `api'et` i `browseren` skal du blot indtaste `IP adressen` fra emailen og `porten` som du har givet i filen du startede (server.js eller app.js).
+
 <a name="referencer"></a>
 ## Referencer
 
