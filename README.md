@@ -11,6 +11,7 @@
 * [9. Opret en mappe til applikationen](#step9)
 * [10. Klon et GitHub repository](#step10)
 * [11. Tilladelser og tilslutning til MySQL](#step11)
+* [12. Start API'et](#step12)
 * [Referencer](#referencer)
 
 <a name="step1"></a>
@@ -247,8 +248,8 @@ For at tilslutte til MySQL serveren udenfor `localhost` kan eksempelvis MySQLWor
 * `Password` er kodeordet der er blevet oprettet oven over.
 Det burde nu være muligt at forbinde til MySQL serveren.
 
-<a name="startapi"></a>
-## Starte API'et
+<a name="step12"></a>
+## Start API'et
 
 For at starte `api'et` med `pm2` skal du først navigere ind i projekt mappen som du har klonet ned fra GitHub.
 Når du er i mappen skriv følgende kommando.
